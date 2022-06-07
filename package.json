@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "unit-3-project",
+  "description": "**Summary** | Field | Detail | |-------|--------| | Project Name | Unit-3-Final-Project| | Description | {One sentence summarizing what is the app and why it matters} | | Developers | Kelly Luu, Cheryl Weigel, Fernando Galvan | | Live Website | {website of deployed application} | | Front-end Repo | https://github.com/kellyluuu/Project_3_Frontend | | Back-end Repo | {Link to git repository} |",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandoLofi/Unit-3-Project-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NandoLofi/Unit-3-Project-Backend/issues"
+  },
+  "homepage": "https://github.com/NandoLofi/Unit-3-Project-Backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

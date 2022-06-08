@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const {DATABASE_URL} = process.env
+const PORT = process.env.PORT
 const mongoose = require('mongoose')
 const Activity = require('./models/activity')
 
@@ -49,4 +49,6 @@ app.put('/activity/:id', async(req, res)=>{
     }
 })
 
+
+app.listen(PORT, ()=> console.log(`Listening on Port ${PORT}`))
 

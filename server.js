@@ -2,7 +2,8 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const {PORT = 3001, DATABASE_URL} = process.env
+const {DATABASE_URL} = process.env
+const PORT = 3001;
 const mongoose = require('mongoose')
 const Activity = require('./models/activity')
 

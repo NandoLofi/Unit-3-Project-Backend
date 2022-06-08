@@ -9,7 +9,6 @@ const Activity = require('./models/activity')
 
 //middleware
 const cors = require('cors')
-app.use(morgan('dev'))
 app.use(express.json())
 app.use(cors())
 

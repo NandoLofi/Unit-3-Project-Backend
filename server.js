@@ -20,7 +20,7 @@ mongoose.connect(process.env.DATABASE_URL, {
 mongoose.connection
 .on('open', ()=> console.log('MongoDB connected'))
 .on('close', ()=> console.log('MongoDB disconnected'))
-.on('error', ()=> console.log("error"))
+.on('error', ()=> console.log("Error"))
 
 
 app.get('/', (req, res)=>{

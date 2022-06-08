@@ -23,7 +23,6 @@
   "bugs": {
     "url": "https://github.com/NandoLofi/Unit-3-Project-Backend/issues"
   },
-  "homepage": "https://github.com/NandoLofi/Unit-3-Project-Backend#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
   }

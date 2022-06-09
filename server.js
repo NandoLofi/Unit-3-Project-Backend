@@ -5,9 +5,11 @@ require('dotenv').config()
 const PORT = process.env.PORT
 const mongoose = require('mongoose')
 const Activity = require('./models/activity')
+const Reviews = require('./models/review')
 
 //middleware
 const cors = require('cors')
+const Review = require('./models/review')
 app.use(express.json())
 app.use(cors())
 
@@ -40,6 +42,14 @@ app.post('/activity', async(req, res)=>{
         res.status(400).json(error)
     }
 } )
+//delete route
+app.delete("/review/:id", async (req,res)=>{
+    try {
+        res.json(await Reviews.findByIdAndDelete(req.params.id))
+    }catch (error){
+        res.status(400).json(error)
+    }
+})
 //update route
 app.put('/activity/:id', async(req, res)=>{
     try{

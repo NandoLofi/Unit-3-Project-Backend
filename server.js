@@ -34,6 +34,14 @@ app.get('/activity', async (req, res)=>{
         res.status(400).json(error)
     }
 })
+//reviews list route
+app.get('/reviews', async (req, res)=>{
+    try{res.json(await Reviews.find({}))
+    }catch(error){
+        res.status(400).json(error)
+    }
+})
+
 //post route
 app.post('/activity', async(req, res)=>{
     try{
@@ -42,8 +50,17 @@ app.post('/activity', async(req, res)=>{
         res.status(400).json(error)
     }
 } )
+//post route for review
+app.post('/reviews/:id ', async(req, res)=>{
+    try{
+        res.json(await Reviews.create(req.body))
+    }catch(error){
+        res.status(400).json(error)
+    }
+} )
+
 //delete route
-app.delete("/review/:id", async (req,res)=>{
+app.delete("/reviews/:id", async (req,res)=>{
     try {
         res.json(await Reviews.findByIdAndDelete(req.params.id))
     }catch (error){
@@ -58,7 +75,14 @@ app.put('/activity/:id', async(req, res)=>{
         res.status(400).json(error)
     }
 })
-
+//update for review
+app.put('/reviews/:id', async(req, res)=>{
+    try{
+        res.json(await Reviews.findByIdAndUpdate(req.params.id, req.body, {new:true}))
+    }catch(error){
+        res.status(400).json(error)
+    }
+})
 
 app.listen(PORT, ()=> console.log(`Listening on Port ${PORT}`))
 

@@ -51,7 +51,7 @@ app.post('/activity', async(req, res)=>{
     }
 } )
 //post route for review
-app.post('/reviews/:id ', async(req, res)=>{
+app.post('/reviews ', async(req, res)=>{
     try{
         res.json(await Reviews.create(req.body))
     }catch(error){

@@ -9,7 +9,6 @@ const Reviews = require('./models/review')
 
 //middleware
 const cors = require('cors')
-const Review = require('./models/review')
 app.use(express.json())
 app.use(cors())
 
@@ -51,7 +50,7 @@ app.post('/activity', async(req, res)=>{
     }
 } )
 //post route for review
-app.post('/reviews ', async(req, res)=>{
+app.post('/reviews/', async(req, res)=>{
     try{
         res.json(await Reviews.create(req.body))
     }catch(error){

@@ -6,9 +6,9 @@
 | Project Name | Unit-3-Final-Project|
 | Description | {One sentence summarizing what is the app and why it matters} |
 | Developers | Kelly Luu, Cheryl Weigel, Fernando Galvan |
-| Live Website | {website of deployed application} |
+| Live Website | https://project-travel-site.herokuapp.com/ |
 | Front-end Repo | https://github.com/kellyluuu/Project_3_Frontend |
-| Back-end Repo | {Link to git repository} |
+| Back-end Repo | https://github.com/NandoLofi/Unit-3-Project-Backend |
 
 ## Intentions of the site
 

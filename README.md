@@ -4,7 +4,7 @@
 | Field | Detail |
 |-------|--------|
 | Project Name | Unit-3-Final-Project|
-| Description | {One sentence summarizing what is the app and why it matters} |
+| Description | A travel website that allows you to explore activities and review them! |
 | Developers | Kelly Luu, Cheryl Weigel, Fernando Galvan |
 | Live Website | https://project-travel-site.herokuapp.com/ |
 | Front-end Repo | https://github.com/kellyluuu/Project_3_Frontend |
@@ -31,9 +31,9 @@ List of stories users should experience when using your application.
 
 | Endpoint | Response | Other |
 | -------- | -------- | ----- |
-| / | Index Page | Going to show thumbmails of rattractions |
-| /show | Index Page | Going to show thumbmails of rattractions |
-| /edit | Index Page | Going to show thumbmails of rattractions |
+| / | Index Page | Going to show thumbmails of attractions |
+| /show | Going to show the details of the activity chosen |
+| /edit | On show page but took different route to implement the edits |
 
 ## Libraries
 
